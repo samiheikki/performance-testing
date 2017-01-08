@@ -275,6 +275,12 @@
     <!-- Theme JavaScript -->
     <script src="js/creative.js"></script>
 
+    <script>
+      navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+        console.log('Service Worker Registered. This app works offline!');
+      });
+    </script>
+
 </body>
 
 </html>
